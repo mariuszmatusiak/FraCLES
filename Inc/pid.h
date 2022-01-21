@@ -90,12 +90,7 @@ extern volatile floatp_t pid_reference_value;
 extern OutputMode output_mode;
 
 // Declarations
-/**
- *
- * @param val
- * @return
- */
-inline floatp_t fast_abs(floatp_t val);
+
 
 /**
  *

@@ -169,8 +169,8 @@ q31_t calculateBackwardDerivativeStandardQ31Optimized(
  * @param k_size
  * @return f_k(mu)
  */
-float powerSeriesExpansionFkCoeff(const float order, const unsigned int k_size);
-void powerSeriesExpansion(float samplingTime, float * buffer, int size,
+floatp_t powerSeriesExpansionFkCoeff(const floatp_t order, const unsigned int k_size);
+void powerSeriesExpansion(floatp_t samplingTime, floatp_t * buffer, int size,
         float v_order);
 /**
  * Calculates series of f_k(mu) for set of k values using f_k(mu) = 1/k! x d^k/dw^k ((1-w)/(1+w)) | w=0
@@ -178,7 +178,7 @@ void powerSeriesExpansion(float samplingTime, float * buffer, int size,
  * @param buffer
  * @param k_size
  */
-void powerSeriesExpansionFkCoefficients(const float order, float * buffer,
+void powerSeriesExpansionFkCoefficients(const floatp_t order, floatp_t * buffer,
         const unsigned int k_size);
 void oustaloupSApprox(floatp_t omega_h, floatp_t omega_l,
         const floatp_t q_order);
